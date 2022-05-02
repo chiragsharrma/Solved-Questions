@@ -6,7 +6,8 @@ public:
         {
             if(nums[j] % 2 == 0)
             {
-                swap(nums[i++],nums[j]);
+                swap(nums[i],nums[j]);
+                i++;
             }
         }
         return nums;
