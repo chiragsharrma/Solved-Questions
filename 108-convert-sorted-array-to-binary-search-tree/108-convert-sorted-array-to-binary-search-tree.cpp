@@ -16,11 +16,9 @@ public:
 }
 
 TreeNode* makeBST(vector<int>& nums, int start, int end) { 
-	// if end > start, no elements left to makeBST
-	if (start > end) { return nullptr; }
-	
-	// if start==end, we are left at the last element
-	if (start == end) {
+	if (start > end) { return nullptr;}
+	if (start == end) 
+    {
 		TreeNode* newNode = new TreeNode(nums[start]);
 		return newNode;
 	}
