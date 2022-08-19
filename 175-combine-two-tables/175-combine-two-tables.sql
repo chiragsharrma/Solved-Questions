@@ -1,4 +1,5 @@
 # Write your MySQL query statement below
-select distinct firstName ,lastName,city,state
-from person left join address 
-ON person.personID = address.personID
+select P.firstName,P.lastName,A.city,A.state
+from Person AS P
+LEFT JOIN Address AS A
+ON P.personID = A.personID
