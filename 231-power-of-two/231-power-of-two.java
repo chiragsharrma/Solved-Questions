@@ -3,7 +3,7 @@ class Solution {
     {
         if(n == 1) return true;
         if(n == 0) return false;
-        if(n%2!= 0 ) return false;
+        if(n%2!= 0 ) return false;//checked all the cases that would fail the condition
         return isPowerOfTwo(n/2);
     }
 }
