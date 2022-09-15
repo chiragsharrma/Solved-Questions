@@ -1,6 +1,7 @@
 class Solution {
 public:
-    vector<int> findOriginalArray(vector<int>& changed) {
+    vector<int> findOriginalArray(vector<int>& changed) 
+    {
         int n = changed.size();
         vector<int> ans;
         vector<int> vacans;
