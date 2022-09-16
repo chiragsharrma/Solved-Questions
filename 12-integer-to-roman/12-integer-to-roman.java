@@ -10,7 +10,7 @@ class Solution {
         {
             int value = integer[i];
             
-            while(num >= value)
+            while(num >= value)//tc- nlogn
             {
                 ans += roman[i];
                 num -= value;
